@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-19T16:11:37 IST" name="Default suite" finished-at="2024-03-19T16:11:37 IST" duration-ms="314">
+  <suite started-at="2024-03-20T15:57:49 IST" name="Default suite" finished-at="2024-03-20T15:57:51 IST" duration-ms="1592">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@7ef82753]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-19T16:11:37 IST" name="Default test" finished-at="2024-03-19T16:11:37 IST" duration-ms="314">
+    <test started-at="2024-03-20T15:57:49 IST" name="Default test" finished-at="2024-03-20T15:57:51 IST" duration-ms="1592">
       <class name="com.bddData.CucumberOpt.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@7ef82753]" started-at="2024-03-19T16:11:37 IST" name="setUpClass" finished-at="2024-03-19T16:11:37 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" started-at="2024-03-20T15:57:49 IST" name="setUpClass" finished-at="2024-03-20T15:57:50 IST" duration-ms="185" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2cb3d0f7]]>
+                <![CDATA[org.testng.TestRunner@2c43eb8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@7ef82753]" started-at="2024-03-19T16:11:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-19T16:11:37 IST" duration-ms="95" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" started-at="2024-03-20T15:57:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-20T15:57:50 IST" duration-ms="889" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Convert table to user defined"]]>
+                <![CDATA["Convert table to user defined1"]]>
               </value>
             </param>
             <param index="1">
@@ -37,7 +37,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.bddData.CucumberOpt.TestRunner@7ef82753]" started-at="2024-03-19T16:11:37 IST" name="tearDownClass" finished-at="2024-03-19T16:11:37 IST" duration-ms="2" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" started-at="2024-03-20T15:57:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-20T15:57:51 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Convert table to user defined2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["I want to read excel"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" started-at="2024-03-20T15:57:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-20T15:57:51 IST" duration-ms="174" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Convert table to user defined3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["I want to read excel"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 3
+at java.base/java.util.Collections$EmptyList.get(Collections.java:4807)
+at com.bddData.BDDExcel.stepDefinitions.StepDefinitions.excel_filename_and_location_is_given_as(StepDefinitions.java:41)
+at ✽.Excel filename and Location is given as(file:///C:/Users/2172261/git/BDDExcelMar2024/BDDExcel/src/test/resources/com/bddData/BDDExcel/dataTable.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" started-at="2024-03-20T15:57:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-20T15:57:51 IST" duration-ms="149" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Convert table to user defined4"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["I want to read excel"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 3
+at java.base/java.util.Collections$EmptyList.get(Collections.java:4807)
+at com.bddData.BDDExcel.stepDefinitions.StepDefinitions.excel_filename_and_location_is_given_as(StepDefinitions.java:41)
+at ✽.Excel filename and Location is given as(file:///C:/Users/2172261/git/BDDExcelMar2024/BDDExcel/src/test/resources/com/bddData/BDDExcel/dataTable.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.bddData.CucumberOpt.TestRunner@1c5920df]" started-at="2024-03-20T15:57:51 IST" name="tearDownClass" finished-at="2024-03-20T15:57:51 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

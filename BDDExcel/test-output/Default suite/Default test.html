@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 19 16:11:37 IST 2024</td>
+<td>Started on:</td><td>Wed Mar 20 15:57:49 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (314 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1592 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,43 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bddData.CucumberOpt.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.bddData.CucumberOpt.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Convert table to user defined4", "I want to read excel"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 3
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4807)
+	at com.bddData.BDDExcel.stepDefinitions.StepDefinitions.excel_filename_and_location_is_given_as(StepDefinitions.java:41)
+	at ✽.Excel filename and Location is given as(file:///C:/Users/2172261/git/BDDExcelMar2024/BDDExcel/src/test/resources/com/bddData/BDDExcel/dataTable.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1318080469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318080469'><pre>java.lang.IndexOutOfBoundsException: Index: 3
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4807)
+	at com.bddData.BDDExcel.stepDefinitions.StepDefinitions.excel_filename_and_location_is_given_as(StepDefinitions.java:41)
+	at ✽.Excel filename and Location is given as(file:///C:/Users/2172261/git/BDDExcelMar2024/BDDExcel/src/test/resources/com/bddData/BDDExcel/dataTable.feature:24)
+</pre></div></td>
+<td>0</td>
+<td>com.bddData.CucumberOpt.TestRunner@1c5920df</td></tr>
+<tr>
+<td title='com.bddData.CucumberOpt.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.bddData.CucumberOpt.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Convert table to user defined3", "I want to read excel"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 3
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4807)
+	at com.bddData.BDDExcel.stepDefinitions.StepDefinitions.excel_filename_and_location_is_given_as(StepDefinitions.java:41)
+	at ✽.Excel filename and Location is given as(file:///C:/Users/2172261/git/BDDExcelMar2024/BDDExcel/src/test/resources/com/bddData/BDDExcel/dataTable.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1793580716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1793580716'><pre>java.lang.IndexOutOfBoundsException: Index: 3
+	at java.base/java.util.Collections$EmptyList.get(Collections.java:4807)
+	at com.bddData.BDDExcel.stepDefinitions.StepDefinitions.excel_filename_and_location_is_given_as(StepDefinitions.java:41)
+	at ✽.Excel filename and Location is given as(file:///C:/Users/2172261/git/BDDExcelMar2024/BDDExcel/src/test/resources/com/bddData/BDDExcel/dataTable.feature:18)
+</pre></div></td>
+<td>0</td>
+<td>com.bddData.CucumberOpt.TestRunner@1c5920df</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +113,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bddData.CucumberOpt.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.bddData.CucumberOpt.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Convert table to user defined", "I want to read excel"</td>
+<td title='com.bddData.CucumberOpt.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.bddData.CucumberOpt.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Convert table to user defined2", "I want to read excel"</td>
 <td></td>
 <td>0</td>
-<td>com.bddData.CucumberOpt.TestRunner@7ef82753</td></tr>
+<td>com.bddData.CucumberOpt.TestRunner@1c5920df</td></tr>
+<tr>
+<td title='com.bddData.CucumberOpt.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.bddData.CucumberOpt.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Convert table to user defined1", "I want to read excel"</td>
+<td></td>
+<td>0</td>
+<td>com.bddData.CucumberOpt.TestRunner@1c5920df</td></tr>
 </table><p>
 </body>
 </html>
